@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap" rel="stylesheet">
+    <title>Heroes</title>
+</head>
+<body>
+
+    <div class="sign">
+            <img id="sign" src="static/sign.png" alt="" >
+    </div>
+
+    <header id="header">
+        <nav id="nav-bar">
+            <ul>
+                <li><a class="nav-link" href="index.html">Home</a></li>
+                <li><a class="nav-link" href="teams.html">Teams</a></li>
+                <li><a class="nav-link" href="heroes.html">Heroes</a></li>
+                <li><a class="nav-link" href="inventory.html">Inventory</a></li>
+                <li><a class="nav-link" href="buy.html">Buy</a></li>
+                <li><a class="nav-link" href="sell.html">Sell</a></li>
+                <li><a class="nav-link" href="trade.html">Trade</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main">
+        <img src="static/main.png" alt="">
+        
+            
+        <table class="hero_list_display">
+            <tr>
+                <th colspan="9">Heroes</th>
+            </tr>
+            <tr>
+                <th>Name</th>
+                <th>Attack</th>
+                <th>Defense</th>
+                <th>Magic</th>
+                <th>Health</th>
+                <th>Mana</th>
+                <th>Money</th>
+                <th>Team</th>
+                <th></th>
+            </tr>
+
+            <tr>
+                <td>Gus</td>
+                <td>100</td>
+                <td>89</td>
+                <td>70</td>
+                <td>200</td>
+                <td>96</td>
+                <td>2000</td>
+                <td>The cool team</td>
+                <td><form action="create_hero.html" >
+                            <input type="submit" name="edit_hero" id="edit_hero" value="Edit Hero">
+                        </form>
+                </td>
+            </tr>
+            
+            <tr >
+                <td colspan="9" >
+                    <div class="button_holder">
+                        <form action="create_hero.html" >
+                            <input type="submit" name="submit_hero" id="add_new_hero" value="Create Hero!">
+                        </form>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+            
+    <footer>
+        <span>Final Project for CS340: Introduction to Databases</span>
+        <span>by Gordon Rogers and James Untalan Duenas</span>
+    </footer>
+</body>
+</html>

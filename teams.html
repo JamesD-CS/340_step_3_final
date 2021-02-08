@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap" rel="stylesheet">
+    <title>Safonte's Shop</title>
+</head>
+<body>
+
+    <div class="sign">
+
+            <img id="sign" src="static/sign.png" alt="" >
+
+    </div>
+
+    <header id="header">
+        <nav id="nav-bar">
+            <ul>
+                <li><a class="nav-link" href="index.html">Home</a></li>
+                <li><a class="nav-link" href="teams.html">Teams</a></li>
+                <li><a class="nav-link" href="heroes.html">Heroes</a></li>
+                <li><a class="nav-link" href="inventory.html">Inventory</a></li>
+                <li><a class="nav-link" href="buy.html">Buy</a></li>
+                <li><a class="nav-link" href="sell.html">Sell</a></li>
+                <li><a class="nav-link" href="trade.html">Trade</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main">
+        <img src="static/main.png" alt="">
+
+        <table class="team_list_display">
+            <tr >
+                <th colspan="2">Teams</th>
+            </tr>
+            
+            <tr>
+                <td>The Cool Team</td>
+                <td>
+                    <form action="edit_teams.html" >
+                        <input type="submit" name="edit_team" id="edit_team" value="Edit Team">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>The Goblin Slayers</td>
+                <td>
+                    <form action="edit_teams.html" >
+                        <input type="submit" name="edit_team" id="edit_team" value="Edit Team">
+                    </form>
+                </td>
+            </tr>
+            <tr >
+                <td colspan="2"><form action="edit_teams.html" >
+                        <input type="submit" name="add_team" id="add_team" value="Create New Team">
+                    </form></td>
+            </tr>
+        </table>
+
+    </div>
+    <footer>
+        <span>Final Project for CS340: Introduction to Databases</span>
+        <span>by Gordon Rogers and James Untalan Duenas</span>
+    </footer>
+</body>
+</html>

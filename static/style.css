@@ -1,0 +1,643 @@
+/** global styling **/
+
+html {
+  background-image: url(bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: initial;
+}
+
+body {
+  font-family: 'Londrina Solid', cursive;
+}
+
+.main > img{
+  max-width:100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
+
+.sign {
+  margin-top: -1%;
+}
+
+.sign > img{
+  max-width:50%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.label {
+  font-size: 4vw;
+  color: goldenrod;
+  -webkit-text-stroke: .10vw #000000;
+  text-shadow: 0 0 4px #000000;
+}
+
+
+
+/** Header and Nav**/
+
+header {
+  min-width: 100%;
+  height: 60px;
+  padding-top: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 4em;
+  z-index: 100;
+}
+
+nav>ul {
+  width: 80vw;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 1em;
+  justify-items: center;
+
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 4.5vw;
+  color: goldenrod;
+  -webkit-text-stroke: 0.2vw #000000;
+
+}
+
+.nav-link:hover {
+  transition: 0.5s;
+  color: gold;
+}
+
+/** Home Content**/
+
+#welcome_head {
+  position: absolute;
+  top: 48vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75vw;
+  text-align: center;
+  font-size: 10vw;
+  color: goldenrod;
+  -webkit-text-stroke: .2vw #000000;
+  text-shadow: 0 0 6px #000000;
+}
+
+#welcome_body {
+  position: absolute;
+  top: 62vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60vw;
+  text-align: center;
+  font-size: 6vw;
+  line-height: 80%;
+  color: goldenrod;
+  -webkit-text-stroke: .2vw #000000;
+  text-shadow: 0 0 3px #000000;
+}
+
+#welcome_list {
+  position: absolute;
+  top: 88vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60vw;
+  text-align: center;
+  font-size: 4.5vw;
+  line-height: 140%;
+  list-style-type: none;
+  color: goldenrod;
+  -webkit-text-stroke: .14vw #000000;
+  text-shadow: 0 0 2px #000000;
+}
+
+.main-link {
+  text-decoration: none;
+  font-size: 6vw;
+  color: goldenrod;
+  -webkit-text-stroke: 0.2vw #000000;
+  text-shadow: 0 0 6px #000000;
+
+}
+
+.main-link:hover {
+  transition: 0.5s;
+  color: gold;
+}
+
+/** Team Content**/
+
+#team_head {
+  position: absolute;
+  top: 48vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75vw;
+  text-align: center;
+  font-size: 10vw;
+  color: goldenrod;
+  -webkit-text-stroke: .2vw #000000;
+  text-shadow: 0 0 6px #000000;
+}
+
+.team_add_remove {
+  position: absolute;
+  top: 74vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 58vw;
+}
+
+.team_list_display {
+  position: absolute;
+  top: 60vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 66.5vw;
+  font-size: 1.8em;
+  color: goldenrod;
+  -webkit-text-stroke: .05vw #000000;
+  text-shadow: 0 0 2px #000000;
+}
+
+.hero_add_remove {
+  position: absolute;
+  top: 97vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 58vw;
+}
+
+/** Hero Content**/
+
+#hero_head {
+  position: absolute;
+  top: 48vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75vw;
+  text-align: center;
+  font-size: 7vw;
+  color: goldenrod;
+  -webkit-text-stroke: .16vw #000000;
+  text-shadow: 0 0 3px #000000;
+}
+
+.create_hero {
+  position: absolute;
+  top: 86vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 54vw;
+}
+
+.button_holder {
+  text-align: center;
+  height: 86px;
+}
+
+
+
+#add_new_hero{
+  height: 119%;
+  width: 43%;
+  font-size: 4vw;
+  font-family: 'Londrina Solid', cursive;
+  letter-spacing: 0.05em;
+  background: unset !important;
+  border: unset !important;
+  outline: unset !important; 
+  color: goldenrod;
+  -webkit-text-stroke: .16vw #000000;
+  text-shadow: 0 0 3px #000000;
+}
+
+#add_new_hero:hover {
+  transition: 0.5s;
+  color: gold;
+  cursor: pointer;
+}
+
+.hero_list_display {
+  position: absolute;
+  top: 60vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 66.5vw;
+  font-size: 1.8em;
+  color: goldenrod;
+  -webkit-text-stroke: .05vw #000000;
+  text-shadow: 0 0 2px #000000;
+}
+
+
+#submit_hero {
+  height: 119%;
+  width: 43%;
+  font-size: 4vw;
+  font-family: 'Londrina Solid', cursive;
+  letter-spacing: 0.05em;
+  background: unset !important;
+  border: unset !important;
+  outline: unset !important; 
+  color: goldenrod;
+  -webkit-text-stroke: .16vw #000000;
+  text-shadow: 0 0 3px #000000;
+}
+
+#submit_hero:hover {
+  transition: 0.5s;
+  color: gold;
+  cursor: pointer;
+}
+
+/** Inventory Content**/
+
+#inventory_head {
+  position: absolute;
+  top: 49vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75vw;
+  text-align: center;
+  font-size: 6vw;
+  color: goldenrod;
+  -webkit-text-stroke: .16vw #000000;
+  text-shadow: 0 0 3px #000000;
+}
+
+.inventory_hero_select {
+  position: absolute;
+  top: 65vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 66vw;
+}
+
+.inventory_hero_display {
+  position: absolute;
+  top: 75vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.inventory_hero_stats {
+  width: 64vw;
+  text-align: left;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: unset;
+  margin: 0em;
+  font-size: 2em;
+  color: goldenrod;
+  -webkit-text-stroke: .05vw #000000;
+  text-shadow: 0 0 2px #000000;
+}
+
+.inventory_item_display {
+  position: absolute;
+  top: 90vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 66.5vw;
+  font-size: 1.8em;
+  color: goldenrod;
+  -webkit-text-stroke: .05vw #000000;
+  text-shadow: 0 0 2px #000000;
+}
+
+
+table, th, td, tr {
+  text-align: center;
+  
+  border-spacing: 10px;
+  border: 1px solid gray;
+  border-collapse: collapse;
+}
+
+th {
+  color: goldenrod;
+  -webkit-text-stroke: .001vw #000000;
+  text-shadow: 0 0 0px #000000;
+}
+
+tr:first-child {
+  font-size: 2em;
+}
+
+/** Buy Content**/
+
+#buy_head {
+  position: absolute;
+  top: 49vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75vw;
+  text-align: center;
+  font-size: 6vw;
+  color: goldenrod;
+  -webkit-text-stroke: .16vw #000000;
+  text-shadow: 0 0 3px #000000;
+}
+
+.buy_hero_select {
+  position: absolute;
+  top: 65vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 66vw;
+}
+
+.buy_hero_display {
+  position: absolute;
+  top: 75vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.buy_hero_stats {
+  width: 64vw;
+  text-align: left;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: unset;
+  margin: 0em;
+  font-size: 2em;
+  color: goldenrod;
+  -webkit-text-stroke: .05vw #000000;
+  text-shadow: 0 0 2px #000000;
+}
+
+.buy_item_select{
+  position: absolute;
+  top: 89vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 66vw;
+}
+
+.buy_list_display {
+  position: absolute;
+  top: 89vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 66.5vw;
+  font-size: 1.8em;
+  color: goldenrod;
+  -webkit-text-stroke: .05vw #000000;
+  text-shadow: 0 0 2px #000000;
+}
+
+.trade_list_display {
+  position: absolute;
+  top: 93vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 66.5vw;
+  font-size: 1.8em;
+  color: goldenrod;
+  -webkit-text-stroke: .05vw #000000;
+  text-shadow: 0 0 2px #000000;
+}
+
+.buy_item_display {
+  position: absolute;
+  top: 103vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.buy_item_stats {
+  width: 64vw;
+  text-align: left;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: unset;
+  margin: 0em;
+  font-size: 2em;
+  color: goldenrod;
+  -webkit-text-stroke: .05vw #000000;
+  text-shadow: 0 0 2px #000000;
+}
+
+#submit_buy {
+  margin-top: 5%;
+
+  font-size: 4vw;
+  font-family: 'Londrina Solid', cursive;
+  letter-spacing: 0.05em;
+  background: unset !important;
+  border: unset !important;
+  outline: unset !important; 
+  color: goldenrod;
+  -webkit-text-stroke: .16vw #000000;
+  text-shadow: 0 0 3px #000000;
+}
+
+#submit_buy:hover {
+  transition: 0.5s;
+  color: gold;
+  cursor: pointer;
+}
+
+/** Sell Content**/
+
+#sell_head {
+  position: absolute;
+  top: 50vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75vw;
+  text-align: center;
+  font-size: 6vw;
+  color: goldenrod;
+  -webkit-text-stroke: .16vw #000000;
+  text-shadow: 0 0 3px #000000;
+}
+
+#sell_body {
+    position: absolute;
+    top: 58vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60vw;
+    text-align: center;
+    font-size: 3vw;
+    line-height: 80%;
+    color: goldenrod;
+    -webkit-text-stroke: .1vw #000000;
+}
+
+.sell_hero_select {
+  position: absolute;
+  top: 69vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 66vw;
+}
+
+.sell_hero_display {
+  position: absolute;
+  top: 80vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero_stats {
+  width: 64vw;
+  text-align: left;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: unset;
+  margin: 0em;
+  font-size: 2em;
+  color: goldenrod;
+  -webkit-text-stroke: .05vw #000000;
+  text-shadow: 0 0 2px #000000;
+}
+
+.sell_item_select{
+  position: absolute;
+  top: 93vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 66vw;
+}
+
+.sell_item_display {
+  position: absolute;
+  top: 108vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.item_stats {
+  width: 64vw;
+  text-align: left;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: unset;
+  margin: 0em;
+  font-size: 2em;
+  color: goldenrod;
+  -webkit-text-stroke: .05vw #000000;
+  text-shadow: 0 0 2px #000000;
+}
+
+#submit_sell {
+  margin-top: 5%;
+
+  font-size: 4vw;
+  font-family: 'Londrina Solid', cursive;
+  letter-spacing: 0.05em;
+  background: unset !important;
+  border: unset !important;
+  outline: unset !important; 
+  color: goldenrod;
+  -webkit-text-stroke: .16vw #000000;
+  text-shadow: 0 0 3px #000000;
+}
+
+#submit_sell:hover {
+  transition: 0.5s;
+  color: gold;
+  cursor: pointer;
+}
+
+/** Trade Content**/
+
+#trade_head {
+  position: absolute;
+  top: 51vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75vw;
+  text-align: center;
+  font-size: 7vw;
+  color: goldenrod;
+  -webkit-text-stroke: .16vw #000000;
+  text-shadow: 0 0 3px #000000;
+}
+
+.give_hero_select {
+  position: absolute;
+  top: 70vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 66vw;
+}
+
+.give_item_select{
+  position: absolute;
+  top: 84vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 66vw;
+}
+
+.receive_hero_select {
+  position: absolute;
+  top: 81vw;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 66vw;
+}
+
+#submit_trade {
+  margin-top: 5%;
+
+  font-size: 4vw;
+  font-family: 'Londrina Solid', cursive;
+  letter-spacing: 0.05em;
+  background: unset !important;
+  border: unset !important;
+  outline: unset !important; 
+  color: goldenrod;
+  -webkit-text-stroke: .16vw #000000;
+  text-shadow: 0 0 3px #000000;
+}
+
+#submit_trade:hover {
+  transition: 0.5s;
+  color: gold;
+  cursor: pointer;
+}
+
+/** Footer**/
+
+footer {
+  width: 100%;
+  padding-bottom: 1em;
+}
+
+
+footer>span {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  font-size: 2.5vw;
+  color: gold;
+  -webkit-text-stroke: .12vw #000000;
+  text-shadow: 0 0 1px #000000;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap" rel="stylesheet">
+    <title>Safonte's Shop</title>
+</head>
+<body>
+
+    <div class="sign">
+
+            <img id="sign" src="static/sign.png" alt="" >
+
+    </div>
+
+    <header id="header">
+        <nav id="nav-bar">
+            <ul>
+                <li><a class="nav-link" href="index.html">Home</a></li>
+                <li><a class="nav-link" href="teams.html">Teams</a></li>
+                <li><a class="nav-link" href="heroes.html">Heroes</a></li>
+                <li><a class="nav-link" href="inventory.html">Inventory</a></li>
+                <li><a class="nav-link" href="buy.html">Buy</a></li>
+                <li><a class="nav-link" href="sell.html">Sell</a></li>
+                <li><a class="nav-link" href="trade.html">Trade</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main">
+        <img src="static/main.png" alt="">
+        <p id="trade_head">Trade with your teammates!</p>
+    </div>
+
+    <form action="" class="give_hero_select">
+        <fieldset>
+            <legend class="label">Which Hero will be Giving?</legend>
+            <label class="label">
+                Select a Hero: 
+            </label>
+            <input list="hero_list" name="heros" id="heroes">
+            <datalist id="hero_list">
+                <option value="Hero 1">
+                <option value="Hero 2">
+                <option value="Hero 3">
+            </datalist>
+            <input type="submit" name="add_hero" id="add_hero" value="Select"> 
+        </fieldset>
+    </form>
+
+
+    <form action="" class="receive_hero_select">
+        <fieldset>
+            <legend class="label">Which Hero will be Receiving?</legend>
+            <label class="label">
+                Select a Hero: 
+            </label>
+            <input list="hero_list" name="heros" id="heroes">
+            <datalist id="hero_list">
+                <option value="Hero 1">
+                <option value="Hero 2">
+                <option value="Hero 3">
+            </datalist>
+            <input type="submit" name="add_hero" id="add_hero" value="Select"> 
+        </fieldset>
+        
+    </form>
+
+    <table class="trade_list_display">
+  <tr>
+    <td colspan="9">Items</td>
+  </tr>
+
+  <tr>
+
+  <td>Name</td>
+  <td>Type</td>
+  <td>Attack</td>
+  <td>Defense</td>
+  <td>Magic</td>
+  <td>Health</td>
+  <td>Mana</td>
+  <td>Cost</td>
+  <td></td>
+
+  </tr>
+  <tr>
+    <td>Sword</td>
+    <td>Weapon</td>
+    <td>+2</td>
+    <td>None</td>
+    <td>+1</td>
+    <td>None</td>
+    <td>None</td>
+    <td>10g</td>
+    <td><form>
+      <input type="submit" name="buy_item" value="Trade Item">
+    </form></td>
+  </tr>
+
+  <tr>
+    <td>Shield</td>
+    <td>Armor</td>
+    <td>None</td>
+    <td>+3</td>
+    <td>+2</td>
+    <td>None</td>
+    <td>None</td>
+    <td>15g</td>
+    <td><form>
+      <input type="submit" name="buy_item" value="Trade Item">
+    </form></td>
+  </tr>
+
+
+</table>
+
+    <footer>
+        <span>Final Project for CS340: Introduction to Databases</span>
+        <span>by Gordon Rogers and James Untalan Duenas</span>
+    </footer>
+</body>
+</html>

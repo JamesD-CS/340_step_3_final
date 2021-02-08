@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap" rel="stylesheet">
+    <title>Safonte's Shop</title>
+</head>
+<body>
+
+    <div class="sign">
+
+            <img id="sign" src="static/sign.png" alt="" >
+
+    </div>
+
+    <header id="header">
+        <nav id="nav-bar">
+            <ul>
+                <li><a class="nav-link" href="index.html">Home</a></li>
+                <li><a class="nav-link" href="teams.html">Teams</a></li>
+                <li><a class="nav-link" href="heroes.html">Heroes</a></li>
+                <li><a class="nav-link" href="inventory.html">Inventory</a></li>
+                <li><a class="nav-link" href="buy.html">Buy</a></li>
+                <li><a class="nav-link" href="sell.html">Sell</a></li>
+                <li><a class="nav-link" href="trade.html">Trade</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main">
+        <img src="static/main.png" alt="">
+        <p id="team_head">Let's Team Up!</p>
+        <form action="" class="team_add_remove">
+            <fieldset>
+                <legend class="label">Create or Remove a Team:</legend>
+                <label class="label">
+                    Create Team: 
+                </label>
+                <input type="text" name="team_name" id="team_name">
+                <input type="submit" name="create_team" id="create_team" value="Create">
+                <br>
+                <label class="label">
+                    Remove Team: 
+                </label>
+                <input list="teams_list" name="teams" id="teams">
+                <datalist id="teams_list">
+                    <option value="Team 1">
+                    <option value="Team 2">
+                    <option value="Team 3">
+                </datalist>
+                <input type="submit" name="remove_team" id="remove_team" value="Remove"> 
+            </fieldset>
+        </form>
+
+        <form action="" class="hero_add_remove">
+            <fieldset>
+                <legend class="label">Add or Remove Heroes from Teams:</legend>
+                <label class="label">
+                    Select a Team: 
+                </label>
+                <input list="teams_list" name="teams" id="teams">
+                <datalist id="teams_list">
+                    <option value="Team 1">
+                    <option value="Team 2">
+                    <option value="Team 3">
+                </datalist>
+                <br>
+                <label class="label">
+                    Add a Hero: 
+                </label>
+                <input list="hero_list" name="heros" id="heroes">
+                <datalist id="hero_list">
+                    <option value="Hero 1">
+                    <option value="Hero 2">
+                    <option value="Hero 3">
+                </datalist>
+                <input type="submit" name="add_hero" id="add_hero" value="Add"> 
+
+                <br>
+                <label class="label">
+                    Remove a Hero: 
+                </label>
+                <input list="hero_list" name="heros" id="heroes">
+                <datalist id="hero_list">
+                    <option value="Hero 1">
+                    <option value="Hero 2">
+                    <option value="Hero 3">
+                </datalist>
+                <input type="submit" name="remove_hero" id="remove_hero" value="Remove"> 
+            </fieldset>
+        </form>
+    </div>
+    <footer>
+        <span>Final Project for CS340: Introduction to Databases</span>
+        <span>by Gordon Rogers and James Untalan Duenas</span>
+    </footer>
+</body>
+</html>

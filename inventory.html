@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap" rel="stylesheet">
+    <title>Safonte's Shop</title>
+</head>
+<body>
+
+    <div class="sign">
+
+            <img id="sign" src="static/sign.png" alt="" >
+
+    </div>
+
+    <header id="header">
+        <nav id="nav-bar">
+            <ul>
+                <li><a class="nav-link" href="index.html">Home</a></li>
+                <li><a class="nav-link" href="teams.html">Teams</a></li>
+                <li><a class="nav-link" href="heroes.html">Heroes</a></li>
+                <li><a class="nav-link" href="inventory.html">Inventory</a></li>
+                <li><a class="nav-link" href="buy.html">Buy</a></li>
+                <li><a class="nav-link" href="sell.html">Sell</a></li>
+                <li><a class="nav-link" href="trade.html">Trade</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main">
+        <img src="static/main.png" alt="">
+        <p id="inventory_head">View and Equip Your Gear!</p>
+
+        <form action="" class="inventory_hero_select">
+            <fieldset>
+                <legend class="label">Which Hero are you choosing?</legend>
+                <label class="label">
+                    Select a Hero: 
+                </label>
+                <input list="hero_list" name="heros" id="heroes">
+                <datalist id="hero_list">
+                    <option value="Hero 1">
+                    <option value="Hero 2">
+                    <option value="Hero 3">
+                </datalist>
+                <input type="submit" name="add_hero" id="add_hero" value="Select"> 
+            </fieldset>
+        </form>
+
+        <form action="" class="inventory_hero_display">
+            <fieldset>
+                <legend class="label">Hero Name</legend>
+                <ul class="inventory_hero_stats">
+                    <li>Attack:</li>
+                    <li>Defense:</li>
+                    <li>Magic:</li>
+                    <li>Health:</li>
+                    <li>Mana:</li>
+                    <li>Money:</li>
+                </ul>
+            </fieldset>
+        </form>
+
+        <table class="inventory_item_display">
+            <tr>
+                <th colspan="7">Inventory</th>
+            </tr>
+            <tr>
+                <th>Type</th>
+                <th>Name</th>
+                <th>Modifier</th>
+                <th>Value</th>
+                <th>Purchased</th>
+                <th>Equpped</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>Weapon</td>
+                <td>Sword</td>
+                <td>Atk +2</td>
+                <td>10g</td>
+                <td>No</td>
+                <td>Yes</td>
+                <td>
+                    <input type="submit" name="submit_equip" id="submit_equip" value="Equip/Unequip">
+                </td>
+            </tr>
+            <tr>
+                <td>Armor</td>
+                <td>Heavy</td>
+                <td>Def +5</td>
+                <td>30g</td>
+                <td>No</td>
+                <td>Yes</td>
+                <td>
+                    <input type="submit" name="submit_equip" id="submit_equip" value="Equip/Unequip">
+                </td>
+            </tr>
+            <tr>
+                <td>Potion</td>
+                <td>Health</td>
+                <td>Healt +5</td>
+                <td>5g</td>
+                <td>Yes</td>
+                <td>No</td>
+                <td>
+                    <input type="submit" name="submit_equip" id="submit_equip" value="Consume">
+                </td>
+            </tr>
+        </table>
+    </div>
+    <footer>
+        <span>Final Project for CS340: Introduction to Databases</span>
+        <span>by Gordon Rogers and James Untalan Duenas</span>
+    </footer>
+</body>
+</html>

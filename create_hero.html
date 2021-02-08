@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap" rel="stylesheet">
+    <title>Create Heroe</title>
+</head>
+<body>
+
+    <div class="sign">
+            <img id="sign" src="static/sign.png" alt="" >
+    </div>
+
+    <header id="header">
+        <nav id="nav-bar">
+            <ul>
+                <li><a class="nav-link" href="index.html">Home</a></li>
+                <li><a class="nav-link" href="teams.html">Teams</a></li>
+                <li><a class="nav-link" href="heroes.html">Heroes</a></li>
+                <li><a class="nav-link" href="inventory.html">Inventory</a></li>
+                <li><a class="nav-link" href="buy.html">Buy</a></li>
+                <li><a class="nav-link" href="sell.html">Sell</a></li>
+                <li><a class="nav-link" href="trade.html">Trade</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main">
+        <img src="static/main.png" alt="">
+        <p id="hero_head">What kind of Hero are You?</p>
+        <form action="" class="create_hero">
+            <fieldset>
+                <legend class="label">Create a Hero:</legend>
+                    <label class="label">
+                        Hero Name: 
+                    </label>
+                    <input type="text" name="hero_name" id="hero_name">
+                <br>
+                    <label class="label">
+                        Join a Team: 
+                    </label>
+                    <input list="teams_list" name="teams" id="teams">
+                    <datalist id="teams_list">
+                        <option value="Team 1">
+                        <option value="Team 2">
+                        <option value="Team 3">
+                    </datalist>
+                <br>
+                    <label class="label">
+                        Starting Items: 
+                    </label>
+                    <input list="inventory" name="items" id="items">
+                    <datalist id="inventory">
+                        <option value="Item 1">
+                        <option value="Item 2">
+                        <option value="Item 3">
+                    </datalist>
+                    <input type="submit" name="add_item" id="add_item" value="Add Item">
+                <br>
+                    <label class="label">
+                        Attack: 
+                    </label>
+                    <input list="attack" name="attack_attribute" id="attack_attribute">
+                    <datalist id="attack">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                    </datalist>
+                <br>
+                    <label class="label">
+                        Defense: 
+                    </label>
+                    <input list="defense" name="defense_attribute" id="defense_attribute">
+                    <datalist id="defense">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                    </datalist>
+                <br>
+                    <label class="label">
+                        Magic: 
+                    </label>
+                    <input list="magic" name="magic_attribute" id="magic_attribute">
+                    <datalist id="magic">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                    </datalist>
+                <br>
+                    <label class="label">
+                        Health: 
+                    </label>
+                    <input list="health" name="health_attribute" id="health_attribute">
+                    <datalist id="health">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                    </datalist>
+                <br>
+                    <label class="label">
+                        Mana: 
+                    </label>
+                    <input list="mana" name="mana_attribute" id="mana_attribute">
+                    <datalist id="mana">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                    </datalist>
+                <br>
+                    <label class="label">
+                        Money: 
+                    </label>
+                    <input list="money" name="money_attribute" id="money_attribute">
+                    <datalist id="money">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                    </datalist>
+  
+            </fieldset>
+            <div class="button_holder">
+                <input type="submit" name="submit_hero" id="submit_hero" value="Create Hero!">
+            </div>
+        </form>
+        
+    </div>
+
+    <footer>
+        <span>Final Project for CS340: Introduction to Databases</span>
+        <span>by Gordon Rogers and James Untalan Duenas</span>
+    </footer>
+</body>
+</html>
